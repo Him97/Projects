@@ -13,40 +13,47 @@
 
 <body class="main-wrapper d-flex flex-column align-items-center bg-body-tertiary">
     <header class="w-50 mh-25 py-3 d-flex justify-content-center"><img title="Little Lemon" src="./images/Asset 14@4x.png" class="mw-100"></header>
-    <nav class="w-75 m-2">
-        <ul class="list-group list-group-flush list-group-horizontal justify-content-evenly">
-            <li class="list-group-item"><a href="index.html" class="link-underline link-underline-opacity-0 link-dark">Home</a></li>
-            <li class="list-group-item"><a href="./pages/menu.html" class="link-underline link-underline-opacity-0 link-dark">Menu</a></li>
-            <li class="list-group-item"><a href="./pages/book.html" class="link-underline link-underline-opacity-0 link-dark">Book</a></li>
-            <li class="list-group-item"><a href="./pages/about.html" class="link-underline link-underline-opacity-0 link-dark">About</a></li>
+    <nav class="w-75">
+        <ul class="row d-flex p-0 justify-content-start bg-dark bg-opacity-75 rounded">
+            <li class="list-group-item col p-2 d-flex justify-content-center"><a href="index.html" class="link-underline link-underline-opacity-0 link-dark text-light">Home</a></li>
+            <li class="list-group-item col p-2 d-flex justify-content-center"><a href="./pages/menu.html" class="link-underline link-underline-opacity-0 link-dark text-light">Menu</a></li>
+            <li class="list-group-item col p-2 d-flex justify-content-center"><a href="./pages/book.html" class="link-underline link-underline-opacity-0 link-dark text-light">Book</a></li>
+            <li class="list-group-item col p-2 d-flex justify-content-center"><a href="./pages/about.html" class="link-underline link-underline-opacity-0 link-dark text-light">About</a></li>
         </ul>
     </nav>
     <main class="w-75 my-2 gap-2 d-flex flex-column align-items-center">
-        <section class="content-box bg-white border border-light-subtle rounded">
-            <img title="Welcome" src="./images/main1.jpg" class="position-sticky">
-            <article class="d-flex flex-column p-3 gap-1 text-light position-relative">
-            <h1>Welcome!</h1>
-            <p>Based in Chicago, Illinois, Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. The chefs draw inspiration from Italian, Greek, and Turkish culture and have a menu of 12-15 items that they rotate seasonally. The restaurant has a rustic and relaxed atmosphere with moderate prices, making it a popular place for a meal any time of the day.</p>
-            <p>Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. To craft the menu, Mario relies on family recipes and his experience as a chef in Italy. Adrian does all the marketing for the restaurant and led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.</p>
-        </article></section>
+        <section class="w-100 bg-white border border-light-subtle rounded position-relative z-0">
+            <img title="Welcome" src="./images/main1.jpg" id="welcome-img" class="position-absolute top-50 start-50 translate-middle rounded w-100 h-100 object-fit-cover z-n1">
+            <article class="welcome d-flex flex-column p-3 gap-1 text-light rounded position-relative bg-dark bg-opacity-25">
+                <h1 class="my-3">Welcome!</h1>
+                <p>Based in Chicago, Illinois, Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. The chefs draw inspiration from Italian, Greek, and Turkish culture and have a menu of 12-15 items that they rotate seasonally. The restaurant has a rustic and relaxed atmosphere with moderate prices, making it a popular place for a meal any time of the day.</p>
+                <p>Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. Adrian does all the marketing for the restaurant.</p>
+            </article>
+        </section>
         <section class="py-2 row gap-2">
             <article class="content-box col d-flex flex-column p-3 bg-white border border-light-subtle rounded">
-                <h2>Founders</h2>
-                <p>Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant.</p>
+                <h2 class="text-center">Our New Menu</h2>
+                <p>To craft the menu, Mario relies on family recipes and his experience as a chef in Italy. Adrian led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.</p>
+                <a href="./pages/menu.html">See our new menu</a>
             </article>
             <article class="content-box col d-flex flex-column p-3 bg-white border border-light-subtle rounded">
-                <h2>Mario</h2>
-                <p>To craft the menu, Mario relies on family recipes and his experience as a chef in Italy.</p>
+                <h2 class="text-center">Book a Table</h2>
+                <p>Instead of waiting in line, order a place now at Little Lemon Restaurant. All you have to do is fill out the details.</p>
+                <a href="./pages/book.html">Book your table now</a>
             </article>
             <article class="content-box col d-flex flex-column p-3 bg-white border border-light-subtle rounded">
-                <h2>Adrian</h2>
-                <p>Adrian does all the marketing for the restaurant and led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.</p>
+                <h2 class="text-center">Opening Hours</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Mon - Fri: 2pm - 10pm</li>
+                    <li class="list-group-item">Sat: 2pm - 11pm</li>
+                    <li class="list-group-item">Sun: 2pm - 9pm</li>
+                </ul>
             </article>
         </section>
     </main>
-    <footer class="row w-75 my-2 gap-2">
-        <div class="col"><img title="Little Lemon" src="./images/Asset 18@4x.png" class="mw-100"></div>
-        <div class="col py-2"><p>© 2023 Little Lemon Inc. All rights reserved.</p></div>
+    <footer class="row w-75 gap-2">
+        <div class="logo-container col"><img title="Little Lemon" src="./images/Asset 18@4x.png" class="h-100 mb-4"></div>
+        <div class="col py-2 border-top border-dark"><p class="text-end">© 2023 Little Lemon Inc. All rights reserved.</p></div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

@@ -4,6 +4,37 @@
     font-family: 'Arvo', serif;
 }
 
+nav li {
+    transition: 0.5s;
+}
+
+nav li:hover {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10%;
+}
+
+.welcome {
+    transition: 0.5s;
+}
+
+.welcome:hover {
+    --bs-bg-opacity: 0.5;
+    background-color: rgba(var(--bg-dark-rgb), var(--bs-bg-opacity));
+}
+
+.content-box {
+    transition: 0.5s;
+}
+
 .content-box:hover {
-    border: 2px solid;
+    transform: scale(110%);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+    height: 100px;
+}
+
+img {
+    object-fit: cover;
 }
